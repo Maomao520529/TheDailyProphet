@@ -11,6 +11,7 @@
 - RWD
 - CSS Flex
 - Gsap
+- AOS
 
 ## 採用設計稿資訊
 
@@ -20,7 +21,7 @@
 ## 個人投稿資訊
 
 - 個人資訊：https://maomao520529.github.io/TheDailyProphet/
-- 投稿位址：
+- 投稿位址：https://2022.thef2e.com/users/12061579703802026976
 
 ## Demo
 
