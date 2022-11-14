@@ -10,6 +10,7 @@
 - SCSS 編譯
 - RWD
 - CSS Flex
+- Gsap
 
 ## 採用設計稿資訊
 
