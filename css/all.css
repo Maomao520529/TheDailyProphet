@@ -762,6 +762,10 @@ html, body {
   font-weight: var(--fontWeight-400);
   color: var(--Brown-color);
 }
+.timeline .container li:first-child:before {
+  background-color: var(--Red-color);
+  z-index: 1;
+}
 .timeline .container .timelineStep02 {
   padding-top: 15rem;
 }
@@ -1110,9 +1114,6 @@ html, body {
     opacity: 0;
   }
 }
-.twards {
-  margin-top: 35rem;
-}
 .twards .container .twardsTop {
   background-color: var(--Brown-color);
 }
@@ -1178,6 +1179,20 @@ html, body {
 }
 
 @media (max-width: 959px) {
+  .twards .container .twardsImage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .twards {
+    margin-top: 35rem;
+  }
   .twards .container .twardsImage {
     display: -webkit-box;
     display: -ms-flexbox;

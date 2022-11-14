@@ -864,7 +864,6 @@ html,body {
 // content 03
 .timeline {
   margin-top: 150px;
-
   .container {
     .timelineTop {
       background-color: var(--Brown-color);
@@ -929,6 +928,10 @@ html,body {
           color: var(--Brown-color);
         }
       }
+    }
+    li:first-child:before{
+      background-color: var(--Red-color);
+      z-index: 1;
     }
     .timelineStep02 {
       padding-top: 15rem;
@@ -1352,7 +1355,6 @@ html,body {
 }
 
 .twards {
-margin-top: 35rem;
   .container {
     .twardsTop {
       background-color: var(--Brown-color);
@@ -1411,6 +1413,18 @@ margin-top: 35rem;
 
 @media (max-width: 959px){
   .twards{
+    .container{
+      .twardsImage{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .twards{
+    margin-top: 35rem;
     .container{
       .twardsImage{
         display: flex;
