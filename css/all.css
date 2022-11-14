@@ -1,0 +1,1209 @@
+@charset "UTF-8";
+:root {
+  --White-color: #ffffff;
+  --Black-color: #000000;
+  --Brown-color: #38241b;
+  --Red-color: #951205;
+  --darkSalmon-color: #e7936d;
+  --fontWeight-900: 900;
+  --fontWeight-800: 800;
+  --fontWeight-700: 700;
+  --fontWeight-500: 500;
+  --fontWeight-400: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  outline: solid 1px black;
+}
+
+html, body {
+  font-family: "Monument", "Noto Serif TC", "AR JULIAN";
+  cursor: url("../images/cursor.png"), auto;
+}
+
+.wrap {
+  background-image: url("../images/background.png");
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 35px;
+}
+.navbar .container .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navbar .container .menu li {
+  width: 120px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 8px;
+}
+.navbar .container .menu li:hover {
+  background-color: var(--darkSalmon-color);
+}
+.navbar .container .menu li a {
+  color: var(--White-color);
+  text-decoration: none;
+  padding: 10px 15px;
+}
+.navbar .container .menu .navBtn {
+  border-radius: 20px;
+  background-color: var(--Red-color);
+}
+
+.navbar-bistre {
+  background-color: var(--Brown-color);
+}
+
+@media (max-width: 959px) {
+  .menu li {
+    padding: 0;
+    margin: 0;
+  }
+  .menu li a {
+    padding: 0;
+  }
+}
+.animation {
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  z-index: 100;
+  width: 100%;
+}
+
+#pagetransition {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.square {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.square.black {
+  top: -50%;
+  left: -20%;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 3;
+  background-image: url("../images/01.png");
+}
+
+.square:hover > .black {
+  top: -100%;
+}
+
+.square.white {
+  height: 200%;
+  right: -50%;
+  top: -130%;
+  z-index: 5;
+  background-image: url("../images/09/bg4.jpg");
+}
+
+.square.gold {
+  right: -20%;
+  bottom: -50%;
+  z-index: 4;
+  background-image: url("../images/09/bg1.jpg");
+}
+
+.main .container {
+  background-image: url("../images/background01.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.main .container .mainbanner {
+  width: 100%;
+  height: 780px;
+  padding: 30px 45px 20px;
+}
+.main .container .mainTextLeft .mainTextOne {
+  position: absolute;
+  top: 8rem;
+  left: 8rem;
+  font-size: 100px;
+  font-weight: var(--fontWeight-800);
+  color: var(--Brown-color);
+  word-break: break-all;
+}
+.main .container .mainTextLeft .mainTextOne span {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  font-size: 50px;
+  color: var(--White-color);
+  background-color: var(--Red-color);
+}
+.main .container .mainTextLeft .mainTextTwo {
+  position: absolute;
+  top: 16rem;
+  left: 8rem;
+  width: 20%;
+  font-size: 46px;
+  font-weight: var(--fontWeight-900);
+  word-break: break-all;
+}
+.main .container .mainTextLeft .mainTextThree {
+  position: absolute;
+  top: 28.5rem;
+  left: 8rem;
+  width: 15%;
+  font-size: 24px;
+  font-weight: var(--fontWeight-400);
+  line-height: 1.5;
+}
+.main .container .Group53 {
+  background-image: url("../images/Group53.png");
+  width: 40%;
+  height: 650px;
+  position: absolute;
+  top: 7rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main .container .bounty {
+  background-image: url("../images/bounty-1.png");
+  width: 25%;
+  height: 150px;
+  position: absolute;
+  top: 5rem;
+  right: 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+.main .container .mainTextRight {
+  position: absolute;
+  top: 20rem;
+  right: 10rem;
+  font-size: 28px;
+  color: var(--Brown-color);
+  font-weight: var(--fontWeight-800);
+}
+.main .container .mainTextRight span {
+  font-size: 58px;
+  padding: 0 35px;
+  letter-spacing: 5px;
+  line-height: 1.5;
+}
+.main .container .mainTextRight .mainNumber {
+  margin-left: 65px;
+}
+.main .container .scrollDown {
+  position: absolute;
+  top: 38rem;
+  right: 10rem;
+}
+
+@media (max-width: 1680px) {
+  .main .container .mainTextLeft .mainTextOne {
+    top: 6rem;
+    left: 6rem;
+    font-size: 85px;
+  }
+  .main .container .mainTextLeft .mainTextTwo {
+    top: 14rem;
+    left: 6rem;
+    font-size: 36px;
+    width: 22%;
+  }
+  .main .container .mainTextLeft .mainTextThree {
+    top: 25rem;
+    left: 6rem;
+    width: 18%;
+    font-size: 24px;
+  }
+  .main .container .Group53 {
+    width: 52%;
+    height: 620px;
+    top: 7.5rem;
+  }
+  .main .container .bounty {
+    background-image: url("../images/bounty-2.png");
+    width: 45%;
+    top: 5rem;
+  }
+  .main .container .mainTextRight {
+    top: 20rem;
+    right: 8rem;
+  }
+}
+@media (max-width: 1200px) {
+  .main .container .mainTextLeft .mainTextOne {
+    top: 4rem;
+    left: 8rem;
+    font-size: 75px;
+  }
+  .main .container .mainTextLeft .mainTextTwo {
+    top: 10rem;
+    left: 8rem;
+    width: 50%;
+    font-size: 45px;
+  }
+  .main .container .mainTextLeft .mainTextThree {
+    display: none;
+  }
+  .main .container .mainTextRight {
+    display: none;
+  }
+  .main .container .Group53 {
+    background-image: url("../images/Group53-1.png");
+    width: 65%;
+    top: 10.5rem;
+  }
+  .main .container .bounty {
+    background-image: url("../images/bounty-2.png");
+    width: 40%;
+    top: 3rem;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
+@media (max-width: 959px) {
+  .main .container .mainTextLeft .mainTextOne {
+    top: 4rem;
+    left: 6rem;
+    font-size: 80px;
+  }
+  .main .container .mainTextLeft .mainTextTwo {
+    top: 10rem;
+    left: 6rem;
+    width: 75%;
+    font-size: 45px;
+  }
+  .main .container .mainTextLeft .mainTextThree {
+    display: none;
+  }
+  .main .container .Group53 {
+    background-image: url("../images/Group53-2.png");
+    width: 80%;
+    top: 12.5rem;
+  }
+  .main .container .bounty {
+    background-image: url("../images/bounty-3.png");
+    width: 35%;
+    top: 15rem;
+    right: 10rem;
+  }
+}
+@media (max-width: 768px) {
+  .main .container .mainTextLeft .mainTextOne {
+    top: 4rem;
+    left: 4rem;
+    font-size: 80px;
+  }
+  .main .container .mainTextLeft .mainTextTwo {
+    top: 9rem;
+    left: 4rem;
+    width: 80%;
+    font-size: 36px;
+  }
+  .main .container .Group53 {
+    background-image: url("../images/Group53-1.png");
+    width: 88%;
+    height: 570px;
+    top: 12rem;
+  }
+  .main .container .bounty {
+    background-image: url("../images/bounty-3.png");
+    width: 45%;
+    top: 15rem;
+    right: 5rem;
+  }
+}
+@media (max-width: 582px) {
+  .main .container .mainTextLeft .mainTextOne {
+    top: 5.5rem;
+    left: 5rem;
+    font-size: 52px;
+  }
+  .main .container .mainTextLeft .mainTextOne span {
+    font-size: 36px;
+  }
+  .main .container .mainTextLeft .mainTextTwo {
+    top: 33rem;
+    left: 3rem;
+    font-size: 38px;
+    padding: 10px 30px;
+  }
+  .main .container .Group53 {
+    background-image: url("../images/Group53-3.png");
+    width: 78%;
+    top: 4rem;
+  }
+  .main .container .bounty {
+    background-image: url("../images/bounty-4.png");
+    top: 10rem;
+    right: 5rem;
+  }
+}
+.level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.level .container {
+  width: 94%;
+}
+.level .container .hexBanner {
+  padding: 20px;
+  text-align: center;
+}
+.level .container .hexBanner img {
+  margin-top: 100px;
+}
+.level .container .hexBanner p {
+  font-size: 40px;
+  letter-spacing: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: var(--fontWeight-500);
+}
+.level .container .hexBanner .borderBottom {
+  border-bottom: thick double var(--Brown-color);
+  margin-bottom: 20px;
+}
+.level .container .levelBanner {
+  background-image: url("../images/levelbanner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 700px;
+  margin-top: 50px;
+}
+.level .container .levelBanner .levelText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 50px;
+}
+.level .container .levelBanner .levelText p {
+  font-size: 44px;
+  margin: 20px 0;
+  letter-spacing: 10px;
+  line-height: 64px;
+  color: var(--White-color);
+  font-weight: var(--fontWeight-700);
+}
+.level .container .levelBanner .levelText img {
+  margin: 10px 0;
+}
+.level .container .levelBanner .levelCover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.level .container .levelBanner .levelCover .levelLeft {
+  margin: 3rem 6rem;
+}
+.level .container .levelBanner .levelCover .levelRight {
+  color: var(--Brown-color);
+  margin: 20px 25px;
+}
+.level .container .levelBanner .levelCover .levelRight .levelTextOne {
+  font-size: 60px;
+  font-weight: var(--fontWeight-900);
+}
+.level .container .levelBanner .levelCover .levelRight .levelTextTwo {
+  font-size: 30px;
+  margin-top: 30px;
+  font-weight: var(--fontWeight-500);
+  width: 81%;
+  letter-spacing: 2.5px;
+  word-break: break-all;
+}
+.level .container .levelBanner .levelCover .levelRight .mainBtn .btn {
+  border-radius: 40px;
+  padding: 10px 40px;
+  margin: 100px 0;
+}
+.level .container .levelBanner .levelCover .levelRight .mainBtn .btnOne {
+  background: none;
+}
+.level .container .levelBanner .levelCover .levelRight .mainBtn .btnOne:hover {
+  background-color: var(--darkSalmon-color);
+}
+.level .container .levelBanner .levelCover .levelRight .mainBtn .btnTwo {
+  margin-left: 20px;
+  color: var(--White-color);
+  background-color: var(--Red-color);
+}
+.level .container .levelBanner .levelCover .levelRight .mainBtn .btnTwo:hover {
+  background-color: var(--darkSalmon-color);
+}
+.level .container .levelBanner .levelCover .levelRight .mainBtn span {
+  font-size: 28px;
+}
+.level .container .levelBanner .levelCover .levelRight .mainBtn .btnText {
+  margin: 20px;
+}
+.level .container .levelBanner .levelCover .levelRightTwo {
+  margin-left: 3.5rem;
+}
+
+.levelTop li {
+  width: 100%;
+  float: left;
+}
+
+@media (max-width: 1680px) {
+  .level .container .levelBanner {
+    background-image: url("../images/levelbanner-md.jpg");
+  }
+  .level .container .levelBanner .levelText {
+    margin: 40px 10px;
+  }
+  .level .container .levelBanner .levelText p {
+    font-size: 30px;
+  }
+  .level .container .levelBanner .levelCover .levelLeft {
+    margin: 3.5rem 8rem;
+  }
+}
+@media (max-width: 1200px) {
+  .levelTop li {
+    width: 48%;
+  }
+  .level .container .hexBanner {
+    padding-top: 130px;
+  }
+  .level .container .hexBanner p {
+    font-size: 34px;
+    text-align: center;
+    letter-spacing: 40px;
+    padding-left: 30px;
+  }
+  .level .container .hexBanner span {
+    display: none;
+  }
+  .level .container .hexBanner .borderBottom {
+    opacity: 0;
+  }
+  .level .container .levelBanner {
+    background-image: url("../images/levelbanner-md.png");
+  }
+  .level .container .levelBanner .levelText {
+    margin: 0;
+  }
+  .level .container .levelBanner .levelText p {
+    display: none;
+  }
+  .level .container .levelBanner .levelText img {
+    width: 85%;
+    margin-top: 0;
+    margin-left: 40px;
+  }
+  .level .container .levelBanner .levelText .kdanlogo {
+    width: 36%;
+    margin-left: 14rem;
+  }
+  .level .container .levelBanner .levelCover .levelLeft {
+    display: none;
+  }
+  .level .container .levelBanner .levelCover .levelRight .levelTextOne {
+    margin: 0 40px;
+    letter-spacing: 10px;
+  }
+  .level .container .levelBanner .levelCover .levelRight .levelTextTwo {
+    margin: 20px 40px;
+    letter-spacing: 10px;
+  }
+  .level .container .levelBanner .levelCover .levelRight .mainBtn .btn {
+    margin: 35px 23px;
+  }
+  .level .container .levelBanner .levelCover .levelRight .mainBtnTwo {
+    margin: 5rem 0;
+  }
+}
+@media (max-width: 1166px) {
+  .levelTop li {
+    width: 100%;
+  }
+  .level .container .levelBanner {
+    background-image: url("../images/levelbanner.jpg");
+  }
+  .level .container .levelBanner .levelText {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .level .container .levelBanner .levelText p {
+    display: none;
+  }
+  .level .container .levelBanner .levelText img {
+    width: 50%;
+    padding-left: 0;
+  }
+  .level .container .levelBanner .levelText .kdanlogo {
+    width: 20%;
+    margin-left: 1rem;
+  }
+  .level .container .levelBanner .levelCover {
+    margin-top: 30px;
+  }
+  .level .container .levelBanner .levelCover .levelLeft {
+    display: none;
+  }
+  .level .container .levelBanner .levelCover .levelRight .levelTextOne {
+    margin: 0 40px;
+    letter-spacing: 10px;
+  }
+  .level .container .levelBanner .levelCover .levelRight .levelTextTwo {
+    margin: 20px 40px;
+    letter-spacing: 10px;
+  }
+  .level .container .levelBanner .levelCover .levelRight .mainBtn {
+    padding-left: 35px;
+  }
+  .level .container .levelBanner .levelCover .levelRight .mainBtn .btn {
+    margin: 35px 10px;
+  }
+}
+@media (max-width: 959px) {
+  .level .container .hexBanner {
+    padding: 0;
+  }
+  .level .container .levelBanner {
+    background-image: url("../images/levelbanner.jpg");
+  }
+  .level .container .levelBanner .levelCover .levelRight {
+    padding: 30px 0;
+    margin: 0;
+  }
+  .level .container .levelBanner .levelCover .levelRight .mainBtn {
+    margin-left: 20px;
+  }
+  .level .container .levelBanner .levelCover .levelRight .mainBtn .btn {
+    margin: 0 10px;
+  }
+  .level .container .levelBanner .levelCover .levelRight .mainBtnTwo {
+    margin: 3rem 0;
+  }
+}
+@media (max-width: 768px) {
+  .level .container .hexBanner {
+    padding: 0;
+  }
+  .level .container .levelBanner {
+    background-image: url("../images/levelbanner.jpg");
+  }
+  .level .container .levelBanner .levelCover .levelRight {
+    padding: 30px 0;
+    margin: 0;
+  }
+  .level .container .levelBanner .levelCover .levelRight .mainBtn {
+    margin-left: 20px;
+  }
+  .level .container .levelBanner .levelCover .levelRight .mainBtn .btn {
+    margin: 0 10px;
+  }
+  .level .container .levelBanner .levelCover .levelRight .mainBtnTwo {
+    margin: 3rem 0;
+  }
+}
+@media (max-width: 540px) {
+  .levelTop li {
+    width: 98%;
+  }
+  .level .container .hexBanner {
+    padding: 0;
+  }
+  .level .container .levelBanner {
+    background-image: url("../images/levelbanner-xs.png");
+  }
+  .level .container .levelBanner .levelText img {
+    width: 100%;
+    margin-left: 2px;
+  }
+  .level .container .levelBanner .levelText .kdanlogo {
+    width: 50%;
+    margin-left: 15rem;
+  }
+  .level .container .levelBanner .levelCover .levelRight {
+    padding: 30px 0;
+    margin: 0;
+  }
+  .level .container .levelBanner .levelCover .levelRight .mainBtn {
+    margin-left: -10px;
+  }
+  .level .container .levelBanner .levelCover .levelRight .mainBtn .btn {
+    margin: 0 2px;
+  }
+}
+.timeline {
+  margin-top: 150px;
+}
+.timeline .container .timelineTop {
+  background-color: var(--Brown-color);
+}
+.timeline .container .timelineTop p {
+  color: var(--White-color);
+  font-size: 60px;
+  text-align: center;
+  padding: 10px;
+}
+.timeline .container .timelineStep {
+  margin-top: 75px;
+  padding: 0;
+}
+.timeline .container .timelineStep li {
+  float: left;
+  width: 25%;
+  position: relative;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.timeline .container .timelineStep li:before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  background-color: var(--Brown-color);
+  margin: 50px 30px;
+  /*rotate 旋轉*/
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  margin: 0 auto -10px auto;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 4rem;
+  left: 15rem;
+}
+.timeline .container .timelineStep li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: var(--Brown-color);
+  top: 5.5rem;
+  left: -50%;
+}
+.timeline .container .timelineStep li:first-child:after {
+  content: none;
+}
+.timeline .container .timelineStep li .timelineName {
+  margin-left: 3.5rem;
+  margin-bottom: 100px;
+  font-size: 30px;
+  font-weight: var(--fontWeight-400);
+  color: var(--Brown-color);
+}
+.timeline .container .timelineStep li .timelineDate {
+  width: 60%;
+  margin-left: 10rem;
+  font-size: 24px;
+  font-weight: var(--fontWeight-400);
+  color: var(--Brown-color);
+}
+.timeline .container .timelineStep02 {
+  padding-top: 15rem;
+}
+.timeline .container .timelineStep02 li {
+  float: left;
+  width: 25%;
+  position: relative;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.timeline .container .timelineStep02 li:before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  background-color: var(--Brown-color);
+  margin: 50px 30px;
+  /*rotate 旋轉*/
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  margin: 0 auto -10px auto;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 3.5rem;
+  left: 44.5rem;
+}
+.timeline .container .timelineStep02 li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: var(--Brown-color);
+  top: 5rem;
+  left: 18rem;
+}
+.timeline .container .timelineStep02 li:first-child:after {
+  content: none;
+}
+.timeline .container .timelineStep02 li .timelineName {
+  width: 100%;
+  margin-left: 31rem;
+  font-weight: var(--fontWeight-400);
+  color: var(--Brown-color);
+}
+.timeline .container .timelineStep02 li .timelineDate {
+  width: 40%;
+  margin-left: 40rem;
+  color: var(--Brown-color);
+  font-weight: var(--fontWeight-400);
+}
+.timeline .container .timelineText {
+  margin-top: 10rem;
+  margin-left: 20rem;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+.timeline .container .timelineText p {
+  line-height: 2;
+  font-size: 28px;
+  font-weight: var(--fontWeight-400);
+}
+
+@media (max-width: 1680px) {
+  .timeline .container .timelineStep li {
+    width: 25%;
+  }
+  .timeline .container .timelineStep li:before {
+    position: absolute;
+    top: 4rem;
+    left: 10rem;
+  }
+  .timeline .container .timelineStep li:after {
+    position: absolute;
+    top: 5.5rem;
+    left: -50%;
+  }
+  .timeline .container .timelineStep li:first-child:after {
+    content: none;
+  }
+  .timeline .container .timelineStep li .timelineName {
+    margin-left: 0;
+    font-size: 20px;
+  }
+  .timeline .container .timelineStep li .timelineDate {
+    width: 60%;
+    margin-left: 6rem;
+    font-size: 18px;
+  }
+  .timeline .container .timelineStep02 li:before {
+    position: absolute;
+    top: 3.5rem;
+    left: 35.5rem;
+  }
+  .timeline .container .timelineStep02 li:after {
+    position: absolute;
+    top: 5rem;
+    left: 10rem;
+  }
+  .timeline .container .timelineStep02 li .timelineName {
+    margin-left: 24rem;
+  }
+  .timeline .container .timelineStep02 li .timelineDate {
+    width: 40%;
+    margin-left: 32rem;
+    margin-bottom: 2rem;
+  }
+  .timeline .container .timelineText {
+    margin-top: 10rem;
+    margin-left: 20rem;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+  }
+  .timeline .container .timelineText p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1590px) {
+  .timeline .container .timelineStep li {
+    width: 25%;
+  }
+  .timeline .container .timelineStep li:before {
+    position: absolute;
+    top: 4rem;
+    left: 10rem;
+  }
+  .timeline .container .timelineStep li:after {
+    position: absolute;
+    top: 5.5rem;
+    left: -50%;
+  }
+  .timeline .container .timelineStep li:first-child:after {
+    content: none;
+  }
+  .timeline .container .timelineStep li .timelineName {
+    margin-left: 0;
+    font-size: 20px;
+  }
+  .timeline .container .timelineStep li .timelineDate {
+    width: 60%;
+    margin-left: 6rem;
+    font-size: 18px;
+  }
+  .timeline .container .timelineStep02 li:before {
+    position: absolute;
+    top: 3.5rem;
+    left: 31rem;
+  }
+  .timeline .container .timelineStep02 li:after {
+    position: absolute;
+    top: 5rem;
+    left: 10rem;
+  }
+  .timeline .container .timelineStep02 li .timelineName {
+    margin-left: 22rem;
+  }
+  .timeline .container .timelineStep02 li .timelineDate {
+    width: 40%;
+    margin-left: 29rem;
+    margin-bottom: 2rem;
+  }
+  .timeline .container .timelineText {
+    margin-top: 10rem;
+    margin-left: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+  }
+  .timeline .container .timelineText p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1200px) {
+  .timeline .container .timelineStep li:before {
+    position: absolute;
+    top: 3.5rem;
+    left: 6rem;
+  }
+  .timeline .container .timelineStep li:after {
+    position: absolute;
+    top: 5rem;
+    left: -50%;
+  }
+  .timeline .container .timelineStep li .timelineName {
+    font-size: 20px;
+    margin-left: -3rem;
+  }
+  .timeline .container .timelineStep li .timelineDate {
+    margin-left: 4rem;
+    font-size: 18px;
+  }
+  .timeline .container .timelineStep02 li:before {
+    position: absolute;
+    top: 3.5rem;
+    left: 24rem;
+  }
+  .timeline .container .timelineStep02 li:after {
+    position: absolute;
+    top: 5rem;
+    left: 6rem;
+  }
+  .timeline .container .timelineStep02 li .timelineName {
+    margin-left: 16rem;
+  }
+  .timeline .container .timelineStep02 li .timelineDate {
+    margin-left: 22rem;
+  }
+  .timeline .container .timelineText {
+    margin-top: 10rem;
+    margin-left: 0;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+  }
+  .timeline .container .timelineText p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 959px) {
+  .timeline .container .timelineStep li:before {
+    position: absolute;
+    top: 3.5rem;
+    left: 6rem;
+  }
+  .timeline .container .timelineStep li:after {
+    position: absolute;
+    top: 5rem;
+    left: -50%;
+  }
+  .timeline .container .timelineStep li .timelineName {
+    font-size: 20px;
+    margin-left: 2rem;
+  }
+  .timeline .container .timelineStep li .timelineDate {
+    margin-left: 3rem;
+    font-size: 18px;
+  }
+  .timeline .container .timelineStep02 li:before {
+    position: absolute;
+    top: 3.5rem;
+    left: 18rem;
+  }
+  .timeline .container .timelineStep02 li:after {
+    position: absolute;
+    top: 5rem;
+    left: 6rem;
+  }
+  .timeline .container .timelineStep02 li .timelineName {
+    margin-left: 13rem;
+  }
+  .timeline .container .timelineStep02 li .timelineDate {
+    margin-left: 17rem;
+  }
+  .timeline .container .timelineText {
+    margin-top: 10rem;
+    margin-left: 6rem;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+  }
+  .timeline .container .timelineText p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .timeline .container .timelineStep li:before {
+    position: absolute;
+    top: 3.5rem;
+    left: 5rem;
+  }
+  .timeline .container .timelineStep li:after {
+    position: absolute;
+    top: 5rem;
+    left: -50%;
+  }
+  .timeline .container .timelineStep li .timelineName {
+    font-size: 20px;
+    margin-left: 2rem;
+  }
+  .timeline .container .timelineStep li .timelineDate {
+    margin-left: 3rem;
+    font-size: 15px;
+  }
+  .timeline .container .timelineStep02 li:before {
+    position: absolute;
+    top: 3.5rem;
+    left: 6rem;
+  }
+  .timeline .container .timelineStep02 li:after {
+    position: absolute;
+    top: 5rem;
+    left: -5rem;
+  }
+  .timeline .container .timelineStep02 li .timelineName {
+    margin-left: 2rem;
+  }
+  .timeline .container .timelineStep02 li .timelineDate {
+    margin-left: 5rem;
+  }
+  .timeline .container .timelineText {
+    padding-top: 1rem;
+  }
+  .timeline .container .timelineText p {
+    display: none;
+  }
+}
+@media (max-width: 540px) {
+  .timeline .container .timelineStep li {
+    width: 100%;
+  }
+  .timeline .container .timelineStep li:before {
+    position: absolute;
+    top: 3.5rem;
+    left: 15rem;
+  }
+  .timeline .container .timelineStep li:after {
+    opacity: 0;
+  }
+  .timeline .container .timelineStep li .timelineName {
+    font-size: 20px;
+    margin-left: 3.5rem;
+    color: var(--Red-color);
+  }
+  .timeline .container .timelineStep li .timelineDate {
+    width: 25%;
+    margin-left: 13rem;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  .timeline .container .timelineStep02 li {
+    width: 43%;
+  }
+  .timeline .container .timelineStep02 li:before {
+    position: absolute;
+    top: 3.5rem;
+    left: 8rem;
+  }
+  .timeline .container .timelineStep02 li:after {
+    opacity: 0;
+  }
+  .timeline .container .timelineStep02 li .timelineName {
+    margin-left: 3rem;
+  }
+  .timeline .container .timelineStep02 li .timelineDate {
+    margin-left: 8rem;
+  }
+  .timeline .container .timelineText {
+    opacity: 0;
+  }
+}
+.twards .container .twardsTop {
+  background-color: var(--Brown-color);
+}
+.twards .container .twardsTop p {
+  color: var(--White-color);
+  font-size: 60px;
+  text-align: center;
+  padding: 30px 0;
+}
+.twards .container .twardsImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.twards .container .twardsImage .item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  padding: 3rem 20px 0;
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--Brown-color);
+  font-size: 2rem;
+}
+.twards .container .twardsImage .item p {
+  text-align: center;
+}
+.twards .container .twardsImage .item .itemText {
+  font-size: 36px;
+}
+.twards .container .twardsText {
+  position: relative;
+  font-size: 72px;
+  text-align: center;
+  line-height: 2;
+  font-weight: var(--fontWeight-900);
+}
+.twards .container .twardsText p {
+  color: var(--Brown-color);
+}
+.twards .container .twardsText span {
+  color: var(--Red-color);
+}
+.twards .container .twardsText img {
+  position: absolute;
+  bottom: 18px;
+  margin-left: 6rem;
+  width: 6%;
+}
+
+.Live .container .liveTop {
+  background-color: var(--Brown-color);
+}
+.Live .container .liveTop p {
+  color: var(--White-color);
+  font-size: 60px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.firm .container .firmImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--White-color);
+}
+.firm .container .firmImage img {
+  margin: 20px 50px;
+}
+
+.footer .container {
+  background-color: var(--Brown-color);
+  color: var(--White-color);
+  text-align: center;
+  line-height: 3;
+}
+.footer .container .h2 {
+  font-size: 60px;
+}
+.footer .container img {
+  margin: 0 10rem;
+}/*# sourceMappingURL=all.css.map */
